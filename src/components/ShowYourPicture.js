@@ -23,7 +23,6 @@ const ShowYourPicture = () => {
     }
   }, [])
 
-  console.log(hasError)
   return (
     <>
       { yourStar.media_type === 'image' ? 
