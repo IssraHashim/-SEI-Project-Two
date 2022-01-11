@@ -133,7 +133,7 @@ After:
 <br/>
 <br/>
 
-*Some features I would have liked to add include:*
+**Some features I would have liked to add include:**
 
 - More filters for the user (for example year or day).
 - Responsive design.
