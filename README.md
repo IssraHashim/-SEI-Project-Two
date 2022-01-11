@@ -63,7 +63,9 @@ Our additional features included filtering by month and year and for the user to
 For the whole project, we pair coded so that each group member could have a say and understanding of all components.
 
 <br/>
+
 *AllPictures*
+
 The main challenge we faced using this api for our AllPictures index page was building the filter, changing the dates inside our get request using pieces of states. The idea behind it was that whenever the user selects another month, or types something the page rerenders and filters through images accordingly.
 Our initial useEffects loads the pictures from a set month, and the filter function (handleChange) will change the startMonth and endMonth every time a user selects a new month.
 
