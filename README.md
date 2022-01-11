@@ -140,19 +140,19 @@ After:
 
 <br/>
 
-*Wins:*
+**Wins:**
 
 - We were able to successfully use the NASA picture api and exploiting it for multiple uses in the app.
 
 <br/>
 
-*Challenges:*
+**Challenges:**
 
 - Extracting the right images was a challenge, especially because it took time to load, this is why we had to filter by month on the index page.
 
 <br/>
 
-*Known bugs:*
+**Known bugs:**
 
 - The website will, by default, show pictures from 2021.
 - The oldest photo dates back to June 16 1995, however this is not mentioned anywhere.
