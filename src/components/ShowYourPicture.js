@@ -18,7 +18,6 @@ const ShowYourPicture = () => {
       }
       getData()
     } catch (error) {
-      console.log(error.msg)
       setHasError(true)
     }
   }, [])

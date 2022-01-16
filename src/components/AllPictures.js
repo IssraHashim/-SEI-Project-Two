@@ -9,8 +9,8 @@ const AllPictures = () => {
   const [newStars, setNewStars] = useState([])
   const [hasError, setHasError] = useState(false)
   const newDate = new Date()
-  const currentDay = `${newDate.getFullYear()}-${newDate.getMonth() + 1}-${newDate.getDate()}`
-  let endDate = `${newDate.getFullYear()}-${newDate.getMonth() + 1}-${newDate.getDate()}`
+  const currentDay = `2021-${newDate.getMonth() + 1}-${newDate.getDate()}`
+  let endDate = `2021-${newDate.getMonth() + 1}-${newDate.getDate()}`
   const currentMonth = `${newDate.getMonth() + 1}`
   let startMonth = `${newDate.getMonth() + 1}`
   let search = ''
@@ -40,7 +40,7 @@ const AllPictures = () => {
     if (event.target.value === currentMonth) {
       endDate = currentDay
     } else {
-      endDate = `${newDate.getFullYear()}-${startMonth}-30`
+      endDate = `2021-${startMonth}-30`
     }
     getData()
   }
@@ -59,23 +59,27 @@ const AllPictures = () => {
     filterPics()
   }
 
-  console.log(newDate)
+
   return (
     <>
       <div className='is-fullheight is-black' id='allpictures'>
         <div id='buttons'>
+          <select id='selectbutton' className='background-is-dark is medium mt-6 ml-6' >
+            <option>2021</option>
+          </select>
           <select onChange={handleChange} className='background-is-dark is medium mt-6 ml-6' id='selectbutton'>
-            <option value='11'>November</option>
-            <option value='10'>October</option>
-            <option value='09'>September</option>
-            <option value='08'>August</option>
-            <option value='07'>July</option>
-            <option value='06'>June</option>
-            <option value='05'>May</option>
-            <option value='04'>April</option>
-            <option value='03'>March</option>
-            <option value='02'>February</option>
             <option value='01'>January</option>
+            <option value='02'>February</option>
+            <option value='03'>March</option>
+            <option value='04'>April</option>
+            <option value='05'>May</option>
+            <option value='06'>June</option>
+            <option value='07'>July</option>
+            <option value='08'>August</option>
+            <option value='09'>September</option>
+            <option value='10'>October</option>
+            <option value='11'>November</option>
+            <option value='12'>December</option>
           </select>
           <div>
             <input placeholder='Search...' className='background-is-dark is medium mt-6 ml-6' id='searchbutton' onKeyUp={handleKeyUp}>
